@@ -25,7 +25,7 @@ pipeline {
 		stage('Build Docker Image') {
 			steps {
 				script {
-					dockerImage = docker.build("khalibad/flask-api-rest:${env.BUILD_TAG}")
+					dockerImage = docker.build("khalibad/flask-api-rest:${env.BUILD_ID}")
 				}
 			}
 		}
