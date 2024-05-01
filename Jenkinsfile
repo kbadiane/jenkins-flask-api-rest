@@ -3,7 +3,7 @@
 pipeline {
 	agent any
 	environment{
-		sh " pip --version"
+		PATH =  "$PATH"
 	}
 	stages {
 		stage('Checkout') {
